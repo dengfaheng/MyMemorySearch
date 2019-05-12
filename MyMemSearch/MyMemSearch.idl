@@ -1,0 +1,29 @@
+// MyMemSearch.idl : MyMemSearch.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(MyMemSearch.tlb)。
+
+[ uuid(405B4692-1ABA-4004-9A30-3F4496D294C5), version(1.0) ]
+library MyMemSearch
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CMyMemSearchDoc 的主调度接口
+	
+	[ uuid(C3DC7F87-C104-4D90-9B0F-4E5C18476527) ]
+	dispinterface IMyMemSearch
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CMyMemSearchDoc 的类信息
+	
+	[ uuid(0449ED02-8B9D-4AF9-A3C5-689786FC7AA3) ]
+	coclass MyMemSearch
+	{
+		[default] dispinterface IMyMemSearch;
+	};
+};
